@@ -1,0 +1,24 @@
+-- ################# Select clause #############
+-- select * from athlete_events;
+
+-- select distinct Name,Sex ,age from athlete_events;
+
+-- select * from athlete_events where age <18;
+
+-- select distinct Name,age from athlete_events where age < 20 and age >=18 order by age;
+
+-- select distinct Name,age from athlete_events where age < 18 or age >70 order by age;
+
+-- select name ,age from athlete_events where age in (20,21);
+
+-- select name from athlete_events where name like 'a%';
+
+-- select name,age from athlete_events where name like 'a%' group by name,age;
+
+-- select name as firstname ,age from athlete_events where name like 'a%' group by name,age;
+
+-- select max(Sales_in_thousands) as maxSales,Manufacturer from car_sales group by Manufacturer order by maxSales desc ;
+
+-- select Sales_in_thousands,Manufacturer from car_sales where Manufacturer NOT in ('BMW','Ford');
+
+-- select max(Sales_in_thousands) as maxSales,Manufacturer from car_sales group by Manufacturer having maxSales >200 order by maxSales desc ;
